@@ -5,9 +5,10 @@ class Status{
     }
 }
 
-const bokad = new Status("Bokad", "green");
-const ejBokad = new Status("Ej bokad", "red");
-const ringa = new Status("Ringa", "yellow");
-const aterkoppla = new Status("Återkoppla", "blue");
-const färdig = new Status("Färdig", "white");
+const EJ_BOKAD = new Status("Ej bokad", "red");
+const BOKAD = new Status("Bokad", "green");
+const RINGA = new Status("Ringa", "yellow");
+const ATERKOPPLA = new Status("Återkoppla", "blue");
+const FARDIG = new Status("Färdig", "white");
 
+let currentStatus = EJ_BOKAD;

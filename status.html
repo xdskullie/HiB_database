@@ -13,10 +13,23 @@
   <header>
     <h1>Page Heading</h1>
   </header>
-
+  
   <main>
-    <p>Hello — your content goes here.</p>
+    <p>This is your current status is: <span id="current-status"></span>This</p>
   </main>
+  
+  <!-- Detta ska bli en dropdown meny -->
+  <!-- Dropdown meny ska visa olika status, och sen när de trycker på en status ska den assigna status till profilen-->
+  <form>
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+      <option value="pending">Pending</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
 
   <!-- Optional script at end of body for faster loading -->
   <script src="status.js"></script>
