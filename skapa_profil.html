@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kundprofil tihi</title>
+  <meta name="description" content="Short page description" />
+</head>
+
+<body>
+  <header>
+  </header>
+  
+  <main>    
+  </main>
+
+  <label>Fyll i uppgifter</label><br>
+
+  <form id="profilForm" onsubmit="submitProfileForm(); return false;">
+    <label>Förnamn Efternamn</label><br>
+    <input type="text" placeholder="John Doe" id="customerName"/><br>
+
+    <label>Mejladress</label><br>
+    <input type="email" placeholder="johndoe@gmail.com" id="mail"/><br>
+
+    <label>Telefonnummer</label><br>
+    <input type="tel" value="+46" id="phone"/><br>
+
+    <label>Hundens namn</label><br>
+    <input type="text" placeholder="Inez" id="dogName"/><br>
+
+    <label>Hundens ålder</label><br>
+    
+    <!-- lägg till så att man kan ändra enhet till månader/år -->
+    <input type="number" placeholder="42" min="0" max="16" id="age"/><br>
+
+    <label>Kontaktdatum</label><br>
+    <input type="date" placeholder="2018-03-22" min="2018-01-01" max="2025-12-12" id="date"/><br>
+
+    <input type="submit"/>
+  </form>
+
+  <p id="profileInformation"></p>
+
+
+  
+  
+
+
+
+  <!-- Optional script at end of body for faster loading -->
+  <script src="skapa_profil.js"></script>
+</body>
+
+</html>
