@@ -11,4 +11,9 @@ const RINGA = new Status("Ringa", "yellow");
 const ATERKOPPLA = new Status("Återkoppla", "blue");
 const FARDIG = new Status("Färdig", "white");
 
-let currentStatus = EJ_BOKAD;
+let currentStatus = 0;
+
+function changeStatus(){
+    var currentStatus = document.getElementById("status").value;
+    document.getElementById("result").innerHTML = "You selected:" + currentStatus;
+}

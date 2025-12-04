@@ -15,20 +15,22 @@
   </header>
   
   <main>
-    <p>This is your current status is: <span id="current-status"></span>This</p>
+    <!-- <p>This is your current status is: <span id="curre"></span>This</p> -->
   </main>
   
   <!-- Detta ska bli en dropdown meny -->
   <!-- Dropdown meny ska visa olika status, och sen när de trycker på en status ska den assigna status till profilen-->
   <form>
     <label for="status">Status:</label>
-    <select id="status" name="status">
-      <option value="active">Active</option>
-      <option value="inactive">Inactive</option>
-      <option value="pending">Pending</option>
+    <select id="status" name="status" onchange="changeStatus()">
+      <option value="0">--Select an option--</option>
+      <option value="1">Ej bokad</option>
+      <option value="2">Bokad</option>
+      <option value="3">Ringa</option>
     </select>
-    <button type="submit">Submit</button>
   </form>
+
+  <p id="result"></p>
 
 
   <!-- Optional script at end of body for faster loading -->
