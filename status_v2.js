@@ -20,7 +20,7 @@ const statuses = Object.freeze({
     [STATUS.BOKAD]: new Status("Bokad", "green"),
     [STATUS.RINGA]: new Status("Ringa", "yellow"),
     [STATUS.ATERKOPPLA]: new Status("Återkoppla", "blue"),
-    [STATUS.FARDIG]: new Status("Färdig", "white")
+    [STATUS.FARDIG]: new Status("Färdig", "gray")
 });
 
 // Expose for debugging/other scripts
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (ev) => {
             ev.preventDefault();
             const confirmEl = document.getElementById('status-confirm');
-            if (confirmEl) confirmEl.textContent = `Saved: ${window.currentStatus.label}`;
+            if (confirmEl) confirmEl.textContent = `Status sparad: ${window.currentStatus.label}`;
             console.log('Status saved:', window.currentStatus);
         });
     }
